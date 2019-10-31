@@ -1,0 +1,19 @@
+version: 0.2
+phases:
+  install:
+    commands:
+    runtime-versions:
+      nodejs: 10
+  pre_build:
+    commands:
+      - echo TESTING
+  build:
+    commands:
+      - echo BUILDING
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+files:
+    - build*/**
+discard-paths: yes
